@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://demo.litecart.net/en/" />
+<title>js</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">js</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/en/rubber-ducks-c-1/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//img[@alt='Red Duck']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Math.floor(1+Math.random()*9)</td>
+	<td>amount</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${amount}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.col-sm-halfs.col-md-thirds &gt; div.price-wrapper &gt; span.price</td>
+	<td>price</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;${price}&quot;.substring(1)</td>
+	<td>price</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${price}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${amount}*${price}</td>
+	<td>total</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=quantity</td>
+	<td>${amount}</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=div.col-sm-halfs.col-md-thirds &gt; h1.title</td>
+	<td>title</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=quantity</td>
+	<td>${amount}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=add_cart_product</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.content</td>
+	<td>Shopping Cart<br /> ${amount} item(s) - $${total}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.featherlight-close-icon.featherlight-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.image &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForValue</td>
+	<td>name=item[a4ae983725a129c1c180abb5096f6171][quantity]</td>
+	<td>${amount}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='box-checkout-cart']/div/table/tbody/tr/td[2]/div/strong/a</td>
+	<td>${title}</td>
+</tr>
+</tbody></table>
+</body>
+</html>
