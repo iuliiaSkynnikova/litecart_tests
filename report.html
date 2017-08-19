@@ -89,6 +89,7 @@ a {
 <td>.1</td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td>
 <table id="suiteTable" class="selenium" cellspacing="1" cellpadding="1" border="1"><tbody>
 <tr class="title       status_failed"><td><b>Test Suite</b></td></tr>
@@ -106,10 +107,30 @@ a {
 </tbody></table>
 
 
+=======
+<td>
+<table id="suiteTable" class="selenium" cellspacing="1" cellpadding="1" border="1"><tbody>
+<tr class="title       status_failed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_failed"><td><a href="#testresult0">add_to_cart</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult1">assertElementPresent</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult2">assertXpathCount</a></td></tr>
+<tr class="  status_failed"><td><a href="click&amp;clickAt.html">click&amp;clickAt</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult4">remove_from_cart</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult5">review_image</a></td></tr>
+<tr class="  status_failed"><td><a href="type&amp;SendKeys.html">type&amp;SendKeys</a></td></tr>
+<tr class="  status_passed"><td><a href="assertAttrebute&amp;assertText.html">assertAttrebute&amp;assertText</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult8">store</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult9">js</a></td></tr>
+<tr class="  status_passed"><td><a href="#testresult10">js2_runScript</a></td></tr>
+</tbody></table>
+
+
+>>>>>>> 313e82a5cbca31b568721347d5bb615dbbb188f0
 </td>
 <td>&nbsp;</td>
 </tr>
 </table><table><tr>
+<<<<<<< HEAD
 <td><a name="testresult0">add_to_cart.html</a><br/><div>
 <table cellspacing="1" cellpadding="1" border="1">
 <thead>
@@ -719,4 +740,615 @@ info: Executing: |runScript | $(&quot;input.hasDatepicker&quot;).datepicker( &qu
 info: Executing: |runScript | $(&quot;input.hasDatepicker&quot;).datepicker( &quot;refresh&quot; ) |  |
 info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
 info: Executing: |runScript | $(&quot;div.hasDatepicker&quot;).datepicker( &quot;setDate&quot;, &quot;10/12/2012&quot; ) |  |
+=======
+<td><a name="testresult0">add_to_cart.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">cart</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/en/rubber-ducks-c-1/</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_failed">
+	<td>click</td>
+	<td>//img[@alt='Red Duck']</td>
+	<td>Element&nbsp;//img[@alt='Red&nbsp;Duck']&nbsp;not&nbsp;found</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>waitForElementPresent</td>
+	<td>name=quantity</td>
+	<td>3</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>type</td>
+	<td>name=quantity</td>
+	<td>3</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>click</td>
+	<td>name=add_cart_product</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>waitForText</td>
+	<td>css=div.content</td>
+	<td>Shopping Cart<br> 3 item(s) - $66</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>click</td>
+	<td>css=button.featherlight-close-icon.featherlight-close</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>clickAndWait</td>
+	<td>css=a.image &gt; img</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>waitForValue</td>
+	<td>name=item[a4ae983725a129c1c180abb5096f6171][quantity]</td>
+	<td>3</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult1">assertElementPresent.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">verify_categories</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/index.php/en/</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAndWait</td>
+	<td>link=Rubber Ducks</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertElementPresent</td>
+	<td>css=li.product img</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>clickAndWait</td>
+	<td>link=This n' that</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertElementNotPresent</td>
+	<td>css=li.product img</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult2">assertXpathCount.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">assertXpathCount</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/index.php/en/</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertElementPresent</td>
+	<td>//div[@id='box-most-popular']/div/ul/li[6]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertElementNotPresent</td>
+	<td>//div[@id='box-most-popular']/div/ul/li[7]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertXpathCount</td>
+	<td>//div[@id='box-most-popular']/div/ul/li</td>
+	<td>6</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertXpathCount</td>
+	<td>//div[@id='box-campaigns']/div/ul/li/a/div/img</td>
+	<td>1</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertCssCount</td>
+	<td>div#box-most-popular &gt;&nbsp;&nbsp;div &gt; ul &gt; li</td>
+	<td>6</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult3">click&clickAt.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">click&amp;clickAt</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_failed">
+	<td>click</td>
+	<td>id=sb_form_q</td>
+	<td>Element&nbsp;id=sb_form_q&nbsp;not&nbsp;found</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>type</td>
+	<td>id=sb_form_q</td>
+	<td>selenium</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>click</td>
+	<td>css=div.sa_tm</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>mouseOver</td>
+	<td>css=div.sa_tm.sa_tmHS</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>clickAt</td>
+	<td>css=div.sa_tm</td>
+	<td>10.10</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult4">remove_from_cart.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">remove_from_cart</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/en/rubber-ducks-c-1/</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_failed">
+	<td>clickAndWait</td>
+	<td>css=a.image &gt; img</td>
+	<td>Element&nbsp;css=a.image&nbsp;&gt;&nbsp;img&nbsp;not&nbsp;found</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>waitForElementPresent</td>
+	<td>name=remove_cart_item</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>click</td>
+	<td>name=remove_cart_item</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>waitForElementPresent</td>
+	<td>//div[@id='box-checkout']/div/p/em</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>clickAndWait</td>
+	<td>link=&lt;&lt; Back</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult5">review_image.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">review_image</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/en/rubber-ducks-c-1/?manufacturers%5B0%5D=1&amp;category_id=1&amp;page=1&amp;sort=popularity</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_failed">
+	<td>click</td>
+	<td>css=img.img-thumbnail</td>
+	<td>Element&nbsp;css=img.img-thumbnail&nbsp;not&nbsp;found</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>click</td>
+	<td>css=a &gt; img.img-responsive</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>click</td>
+	<td>css=button.featherlight-close-icon.featherlight-close</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>mouseOver</td>
+	<td>css=div.featherlight.active &gt; div.featherlight-content &gt; button.featherlight-close-icon.featherlight-close</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>click</td>
+	<td>css=div.featherlight.active &gt; div.featherlight-content &gt; button.featherlight-close-icon.featherlight-close</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult6">type&SendKeys.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">type&amp;SendKeys</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/jquery/auto-complete/demo.html</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_failed">
+	<td>sendKeys</td>
+	<td>id=hero-demo</td>
+	<td>Element&nbsp;id=hero-demo&nbsp;not&nbsp;found</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>type</td>
+	<td>id=hero-demo</td>
+	<td>j</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>keyUp</td>
+	<td>id=hero-demo</td>
+	<td>j</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>clickAt</td>
+	<td>id=hero-demo</td>
+	<td>20.20</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult7">assertAttrebute&assertText.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">assertAttrebute&amp;assertText</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/index.php/en/</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertElementPresent</td>
+	<td>//nav[@id='site-menu']/ul/li[2]/a[@href="http://litecart.stqa.ru/index.php/en/rubber-ducks-c-1/"]</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertAttribute</td>
+	<td>//nav[@id='site-menu']/ul/li[2]/a@href</td>
+	<td>http://litecart.stqa.ru/index.php/en/rubber-ducks-c-1/</td>
+</tr>
+<tr style="cursor: pointer;" class="  status_passed">
+	<td>assertText</td>
+	<td>//nav[@id='site-menu']/ul/li[2]/a</td>
+	<td>Rubber Ducks</td>
+</tr>
+
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult8">store.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">store</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/en/rubber-ducks-c-1/</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_failed">
+	<td>click</td>
+	<td>//img[@alt='Red Duck']</td>
+	<td>Element&nbsp;//img[@alt='Red&nbsp;Duck']&nbsp;not&nbsp;found</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>store</td>
+	<td>6</td>
+	<td>amount</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>storeEval</td>
+	<td>${amount}*22</td>
+	<td>total</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>waitForElementPresent</td>
+	<td>name=quantity</td>
+	<td>${amount}</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>storeText</td>
+	<td>css=div.col-sm-halfs.col-md-thirds &gt; h1.title</td>
+	<td>title</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>type</td>
+	<td>name=quantity</td>
+	<td>${amount}</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>click</td>
+	<td>name=add_cart_product</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>waitForText</td>
+	<td>css=div.content</td>
+	<td>Shopping Cart<br> ${amount} item(s) - $${total}</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>click</td>
+	<td>css=button.featherlight-close-icon.featherlight-close</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>clickAndWait</td>
+	<td>css=a.image &gt; img</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>waitForValue</td>
+	<td>name=item[a4ae983725a129c1c180abb5096f6171][quantity]</td>
+	<td>${amount}</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>assertText</td>
+	<td>//div[@id='box-checkout-cart']/div/table/tbody/tr/td[2]/div/strong/a</td>
+	<td>${title}</td>
+</tr>
+
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult9">js.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_failed"><td rowspan="1" colspan="3">js</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>/en/rubber-ducks-c-1/</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_failed">
+	<td>click</td>
+	<td>//img[@alt='Red Duck']</td>
+	<td>Element&nbsp;//img[@alt='Red&nbsp;Duck']&nbsp;not&nbsp;found</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>storeEval</td>
+	<td>Math.floor(1+Math.random()*9)</td>
+	<td>amount</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>echo</td>
+	<td>${amount}</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>storeText</td>
+	<td>css=div.col-sm-halfs.col-md-thirds &gt; div.price-wrapper &gt; span.price</td>
+	<td>price</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>storeEval</td>
+	<td>"${price}".substring(1)</td>
+	<td>price</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>echo</td>
+	<td>${price}</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>storeEval</td>
+	<td>${amount}*${price}</td>
+	<td>total</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>waitForElementPresent</td>
+	<td>name=quantity</td>
+	<td>${amount}</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>storeText</td>
+	<td>css=div.col-sm-halfs.col-md-thirds &gt; h1.title</td>
+	<td>title</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>type</td>
+	<td>name=quantity</td>
+	<td>${amount}</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>click</td>
+	<td>name=add_cart_product</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>waitForText</td>
+	<td>css=div.content</td>
+	<td>Shopping Cart<br> ${amount} item(s) - $${total}</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>click</td>
+	<td>css=button.featherlight-close-icon.featherlight-close</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>clickAndWait</td>
+	<td>css=a.image &gt; img</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>waitForValue</td>
+	<td>name=item[a4ae983725a129c1c180abb5096f6171][quantity]</td>
+	<td>${amount}</td>
+</tr>
+<tr style="cursor: pointer;" class="">
+	<td>assertText</td>
+	<td>//div[@id='box-checkout-cart']/div/table/tbody/tr/td[2]/div/strong/a</td>
+	<td>${title}</td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td><a name="testresult10">js2_runScript.html</a><br/><div>
+<table cellspacing="1" cellpadding="1" border="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">js2</td></tr>
+</thead><tbody>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>open</td>
+	<td>http://demos.jquerymobile.com/1.4.5/datepicker/</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>runScript</td>
+	<td>myDate = new Date(Math.random()*new Date().getTime())</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>runScript</td>
+	<td>$("input.hasDatepicker").datepicker( "setDate", myDate )</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>runScript</td>
+	<td>$("input.hasDatepicker").datepicker( "refresh" )</td>
+	<td></td>
+</tr>
+<tr style="cursor: pointer;" class="  status_done">
+	<td>runScript</td>
+	<td>$("div.hasDatepicker").datepicker( "setDate", "10/12/2012" )</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/add_to_cart.html
+info: Executing: |open | /en/rubber-ducks-c-1/ |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | //img[@alt=&apos;Red Duck&apos;] |  |
+error: Element //img[@alt=&apos;Red Duck&apos;] not found
+warn: currentTest.recordFailure: Element //img[@alt=&apos;Red Duck&apos;] not found
+info: Starting test /selenium-server/tests/assertElementPresent.html
+info: Executing: |open | /index.php/en/ |  |
+info: Executing: |clickAndWait | link=Rubber Ducks |  |
+info: Executing: |assertElementPresent | css=li.product img |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | link=This n&apos; that |  |
+info: Executing: |assertElementNotPresent | css=li.product img |  |
+info: Starting test /selenium-server/tests/assertXpathCount.html
+info: Executing: |open | /index.php/en/ |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertElementPresent | //div[@id=&apos;box-most-popular&apos;]/div/ul/li[6] |  |
+info: Executing: |assertElementNotPresent | //div[@id=&apos;box-most-popular&apos;]/div/ul/li[7] |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertXpathCount | //div[@id=&apos;box-most-popular&apos;]/div/ul/li | 6 |
+info: Executing: |assertXpathCount | //div[@id=&apos;box-campaigns&apos;]/div/ul/li/a/div/img | 1 |
+info: Executing: |assertCssCount | div#box-most-popular &gt;  div &gt; ul &gt; li | 6 |
+info: Starting test /selenium-server/tests/click&amp;clickAt.html
+info: Executing: |open | / |  |
+info: Executing: |click | id=sb_form_q |  |
+error: Element id=sb_form_q not found
+warn: currentTest.recordFailure: Element id=sb_form_q not found
+info: Starting test /selenium-server/tests/remove_from_cart.html
+info: Executing: |open | /en/rubber-ducks-c-1/ |  |
+info: Executing: |clickAndWait | css=a.image &gt; img |  |
+error: Element css=a.image &gt; img not found
+warn: currentTest.recordFailure: Element css=a.image &gt; img not found
+info: Starting test /selenium-server/tests/review_image.html
+info: Executing: |open | /en/rubber-ducks-c-1/?manufacturers%5B0%5D=1&amp;category_id=1&amp;page=1&amp;sort=popularity |  |
+info: Executing: |click | css=img.img-thumbnail |  |
+error: Element css=img.img-thumbnail not found
+warn: currentTest.recordFailure: Element css=img.img-thumbnail not found
+info: Starting test /selenium-server/tests/type&amp;SendKeys.html
+info: Executing: |open | /jquery/auto-complete/demo.html |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |sendKeys | id=hero-demo | j |
+error: Element id=hero-demo not found
+warn: currentTest.recordFailure: Element id=hero-demo not found
+info: Starting test /selenium-server/tests/assertAttrebute&amp;assertText.html
+info: Executing: |open | /index.php/en/ |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertElementPresent | //nav[@id=&apos;site-menu&apos;]/ul/li[2]/a[@href=&quot;http://litecart.stqa.ru/index.php/en/rubber-ducks-c-1/&quot;] |  |
+info: Executing: |assertAttribute | //nav[@id=&apos;site-menu&apos;]/ul/li[2]/a@href | http://litecart.stqa.ru/index.php/en/rubber-ducks-c-1/ |
+info: Executing: |assertText | //nav[@id=&apos;site-menu&apos;]/ul/li[2]/a | Rubber Ducks |
+info: Starting test /selenium-server/tests/store.html
+info: Executing: |open | /en/rubber-ducks-c-1/ |  |
+info: Executing: |click | //img[@alt=&apos;Red Duck&apos;] |  |
+error: Element //img[@alt=&apos;Red Duck&apos;] not found
+warn: currentTest.recordFailure: Element //img[@alt=&apos;Red Duck&apos;] not found
+info: Starting test /selenium-server/tests/js.html
+info: Executing: |open | /en/rubber-ducks-c-1/ |  |
+info: Executing: |click | //img[@alt=&apos;Red Duck&apos;] |  |
+error: Element //img[@alt=&apos;Red Duck&apos;] not found
+warn: currentTest.recordFailure: Element //img[@alt=&apos;Red Duck&apos;] not found
+info: Starting test /selenium-server/tests/js2_runScript.html
+info: Executing: |open | http://demos.jquerymobile.com/1.4.5/datepicker/ |  |
+info: Executing: |runScript | myDate = new Date(Math.random()*new Date().getTime()) |  |
+info: Executing: |runScript | $(&quot;input.hasDatepicker&quot;).datepicker( &quot;setDate&quot;, myDate ) |  |
+info: Executing: |runScript | $(&quot;input.hasDatepicker&quot;).datepicker( &quot;refresh&quot; ) |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |runScript | $(&quot;div.hasDatepicker&quot;).datepicker( &quot;setDate&quot;, &quot;10/12/2012&quot; ) |  |
+>>>>>>> 313e82a5cbca31b568721347d5bb615dbbb188f0
 </pre></body></html>
